@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            padding: 1em 2em;
+        }
+        .search_bar{
+            width: 30%;
+            line-height: 2;
+        }
+        .search_bar:focus{
+            width: 100%;
+            transition: 0.3s;
+            outline: none;
+            border: 2px solid rgb(102, 102, 255);
+            font-size: 12px;         
+        }
+       .search_bar:focus::placeholder{
+        color: transparent;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="search" placeholder="Search..." class="search_bar">
+    </div>
+</body>
+</html>
