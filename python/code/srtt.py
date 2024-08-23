@@ -19,4 +19,4 @@ class Time():
 
 start=Time(23,85,58)
 end=Time(12,0,36)
-print(start+1337)
+print(Time.pt(start))
